@@ -62,25 +62,10 @@ form.addEventListener("submit", function(e) {
         tableBody.classList.remove("show-finished", "show-pending");
 
         if (status === "finished") {
-            if (row.classList.contains('finished')) {
-                notFound.style.display = 'none';
-            } else {
-                notFound.style.display = '';
-            }
             tableBody.classList.add('show-finished');
         } else if (status === "pending") {
-            if (row.classList.contains('pending')) {
-                notFound.style.display = 'none';
-            } else {
-                notFound.style.display = '';
-            }
             tableBody.classList.add('show-pending');
         } else if (status === "all") {
-            if (row.classList.contains('pending') || row.classList.contains('finished')) {
-                notFound.style.display = 'none';
-            } else {
-                notFound.style.display = '';
-            }
             tableBody.classList.remove('show-finished');
             tableBody.classList.remove('show-pending');
         }

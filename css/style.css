@@ -63,14 +63,6 @@ input::placeholder {
     color: white;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0;
-}
-
-input[type="date"] {
-  pointer-events: auto;
-}
-
 .inputan button {
     border-radius: 5px;
     width: 30px;
