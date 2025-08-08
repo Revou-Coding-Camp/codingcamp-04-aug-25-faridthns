@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+    <!-- CDN Font Awesome versi 6 dari jsDelivr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <main class="toDoCard">
+        <form id="formInput">
+            <h1>ToDo List</h1>
+            <div class="inputan">
+                <input type="text" id="task" placeholder="Add a todo...">
+                <input type="date" id="date" placeholder="mm/dd/yyyy">
+                <button type="submit" id="submit">+</button>
+            </div>
+        </form>
+        <div class="taskList">
+            <div class="btnSetting">
+                <!-- <button type >Filter</button> -->
+                <select id="filter">
+                    <option value="all">Filter</option>
+                    <option value="finished">Finished</option>
+                    <option value="pending">Pending</option>
+                </select>
+                <button id="deleteBtn">Delete All</button>
+            </div>
+            <table id="taskTable">
+                <thead>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr id="notFound">
+                        <td colspan="5" style="border: none; padding: 1rem 0;">Not Found Task</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

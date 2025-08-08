@@ -1,0 +1,133 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #00224D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button, select {
+    border: 3px #00224D solid;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: 100px;
+    background-color: #5D0E41;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover, select:hover {
+    background-color: #00224D;
+    border: 3px white solid;
+}
+
+.toDoCard {
+    width: fit-content;
+    min-height: 60vh;
+    border: 4px #A0153E solid;
+    background-color: #FF204E ;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.toDoCard h1 {
+    font-weight: bold;
+}
+
+.inputan {
+    display: grid;
+    grid-template-columns: auto auto 2rem;
+    column-gap: 0.5rem;
+}
+
+input {
+    padding: 0 1rem;
+    width: auto;
+    height: 2rem;
+    border: 2px solid #00224D;
+    border-radius: 5px;
+    background-color: #5D0E41;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input[type="date"] {
+  pointer-events: auto;
+}
+
+.inputan button {
+    border-radius: 5px;
+    width: 30px;
+    padding: 0;
+}
+
+.taskList {
+    margin-top: 2rem;
+}
+
+.btnSetting {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.taskList table{
+    /* border: 2px solid #00224D; */
+    border-radius: 10px;
+    background-color: #5D0E41;
+    width: 100%;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #00224D;
+}
+
+th:first-child {
+    border-radius: 10px 0 0 0; 
+}
+
+th:last-child {
+    border-radius: 0 10px 0 0; 
+}
+
+th {
+    width: auto;
+}
+
+thead th, tbody tr td {
+    color: white;
+    padding: 10px;
+}
+
+.taskBtn, .taskBtn:hover {
+    padding: 0;
+    width: fit-content;
+    font-weight: normal;
+    border: none;
+}
+
+.show-finished .pending {
+    display: none;
+}
+
+.show-pending .finished {
+    display: none;
+}
